@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:backgroundTint="@color/teal_700"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/teal_700"
     tools:context=".MainActivity">
 
     <TextView
@@ -24,6 +24,8 @@
         android:id="@+id/value1"
         android:layout_width="296dp"
         android:layout_height="68dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:backgroundTint="@color/teal_200"
         android:ems="10"
         android:hint="Enter First Number:"
         android:inputType="textPersonName"
@@ -33,12 +35,14 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.153" />
+        app:layout_constraintVertical_bias="0.155" />
 
     <EditText
         android:id="@+id/value2"
         android:layout_width="293dp"
         android:layout_height="66dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:backgroundTint="@color/teal_200"
         android:ems="10"
         android:hint="Enter Second Number:"
         android:inputType="textPersonName"
@@ -48,13 +52,13 @@
         app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.301" />
+        app:layout_constraintVertical_bias="0.307" />
 
     <Button
         android:id="@+id/add"
         android:layout_width="62dp"
         android:layout_height="92dp"
-        android:onClick="add"
+        android:onClick="findSum"
         android:text="+"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,7 +72,7 @@
         android:id="@+id/subtract"
         android:layout_width="62dp"
         android:layout_height="92dp"
-        android:onClick="subtract"
+        android:onClick="findDifference"
         android:text="-"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -82,7 +86,7 @@
         android:id="@+id/multiply"
         android:layout_width="62dp"
         android:layout_height="92dp"
-        android:onClick="multiply"
+        android:onClick="findProduct"
         android:text="*"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -96,7 +100,7 @@
         android:id="@+id/divide"
         android:layout_width="62dp"
         android:layout_height="92dp"
-        android:onClick="divide"
+        android:onClick="findQuotient"
         android:text="/"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -110,6 +114,8 @@
         android:id="@+id/totalResult"
         android:layout_width="116dp"
         android:layout_height="53dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:backgroundTint="@color/teal_200"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="0.0"

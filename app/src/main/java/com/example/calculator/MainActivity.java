@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+
 public class MainActivity extends AppCompatActivity {
     private EditText value1;
     private EditText value2;
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         totalValue = (EditText) findViewById(R.id.totalResult);
     }
 
-    public void add(View view){
+    public void findSum(View view){
         String v1 = value1.getText().toString();
         String v2 = value2.getText().toString();
 
@@ -39,10 +40,10 @@ public class MainActivity extends AppCompatActivity {
 
         double total = n1 + n2;
 
-        totalValue.setText(Double.toString(total));
+        totalValue.setText("" + total);
     }
 
-    public void subtract(View view){
+    public void findDifference(View view){
         String v1 = value1.getText().toString();
         String v2 = value2.getText().toString();
 
@@ -51,10 +52,10 @@ public class MainActivity extends AppCompatActivity {
 
         double total = n1 - n2;
 
-        totalValue.setText(Double.toString(total));
+        totalValue.setText("" + total);
     }
 
-    public void multiply(View view){
+    public void findProduct(View view){
         String v1 = value1.getText().toString();
         String v2 = value2.getText().toString();
 
@@ -63,10 +64,10 @@ public class MainActivity extends AppCompatActivity {
 
         double total = n1 * n2;
 
-        totalValue.setText(Double.toString(total));
+        totalValue.setText("" + total);
     }
 
-    public void divide(View view){
+    public void findQuotient(View view){
         String v1 = value1.getText().toString();
         String v2 = value2.getText().toString();
 
@@ -75,6 +76,6 @@ public class MainActivity extends AppCompatActivity {
 
         double total = n1 / n2;
 
-        totalValue.setText(Double.toString(total));
+        totalValue.setText("" + total);
     }
 }
