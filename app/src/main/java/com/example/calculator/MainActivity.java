@@ -2,10 +2,12 @@ package com.example.calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -57,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void findDifference(View view){
+
         String v1 = value1.getText().toString();
         String v2 = value2.getText().toString();
 
@@ -69,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void findProduct(View view){
+
         String v1 = value1.getText().toString();
         String v2 = value2.getText().toString();
 
@@ -81,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void findQuotient(View view){
+
         String v1 = value1.getText().toString();
         String v2 = value2.getText().toString();
 
@@ -93,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void findModulus(View view){
+
         String v1 = value1.getText().toString();
         String v2 = value2.getText().toString();
 
@@ -113,5 +119,7 @@ public class MainActivity extends AppCompatActivity {
 
         totalValue.setText("" + threeDecimalPlaces.format(total));
     }
+
+
 
 }
