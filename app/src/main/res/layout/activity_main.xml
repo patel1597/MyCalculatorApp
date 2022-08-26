@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:backgroundTint="@color/teal_700"
     tools:context=".MainActivity">
-
+<!-- found out how to only enter numbers in the edit text box: https://stackoverflow.com/questions/7300490/set-edittext-digits-programmatically -->
     <TextView
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
@@ -40,8 +40,8 @@
 
     <EditText
         android:id="@+id/value2"
-        android:layout_width="293dp"
-        android:layout_height="66dp"
+        android:layout_width="298dp"
+        android:layout_height="61dp"
         android:background="@android:drawable/editbox_dropdown_dark_frame"
         android:backgroundTint="@color/teal_200"
         android:digits="0123456789"
@@ -58,17 +58,17 @@
 
     <Button
         android:id="@+id/add"
-        android:layout_width="73dp"
-        android:layout_height="92dp"
+        android:layout_width="70dp"
+        android:layout_height="94dp"
         android:onClick="findSum"
         android:text="+"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintHorizontal_bias="0.709"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.626" />
+        app:layout_constraintVertical_bias="0.618" />
 
     <Button
         android:id="@+id/subtract"
@@ -110,7 +110,7 @@
         app:layout_constraintHorizontal_bias="0.709"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.816" />
+        app:layout_constraintVertical_bias="0.808" />
 
     <EditText
         android:id="@+id/totalResult"
@@ -120,14 +120,14 @@
         android:backgroundTint="@color/teal_200"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="0.0"
+        android:text="0.000"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.823" />
+        app:layout_constraintVertical_bias="0.758" />
 
     <TextView
         android:id="@+id/textView2"
@@ -137,10 +137,10 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.231"
+        app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.738" />
+        app:layout_constraintVertical_bias="0.673" />
 
     <Button
         android:id="@+id/mod"
@@ -158,17 +158,17 @@
 
     <Button
         android:id="@+id/square"
-        android:layout_width="68dp"
-        android:layout_height="88dp"
+        android:layout_width="71dp"
+        android:layout_height="85dp"
         android:onClick="square"
         android:text="x² "
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/mod"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.702"
+        app:layout_constraintHorizontal_bias="0.711"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.995" />
+        app:layout_constraintVertical_bias="0.99" />
 
     <EditText
         android:id="@+id/value3"
@@ -186,6 +186,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.462" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="129dp"
+        android:layout_height="64dp"
+        android:onClick="clear"
+        android:text="CLEAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.942" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
